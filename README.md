@@ -2,16 +2,17 @@
 # 🛡️ Cybersecurity Maturity Assessment & Roadmap
 
 **Framework Used**: NIST Cybersecurity Framework (CSF) 2.0  
-**Compliance Reference**: HIPAA Security Rule (45 CFR Part 164)  
-**Client**: [Insert Organization Name]  
-**Author**: [Your Name or Title]  
-**Date**: [Insert Date]
+Client: MediSure Health (Fictional Healthcare Startup)
+Prepared by: James
+Date: October 2025
+
+
 
 ---
 
 ## 📌 Introduction
 
-This README documents a cybersecurity maturity assessment based on the NIST Cybersecurity Framework (CSF) 2.0. The goal is to evaluate the current security posture of the organization and build a roadmap toward Tier 4: Adaptive maturity. All evaluations consider HIPAA compliance and the protection of ePHI (electronic Protected Health Information).
+This  documents a cybersecurity maturity assessment based on the NIST Cybersecurity Framework (CSF) 2.0. The goal is to evaluate the current security posture of the organization and build a roadmap toward Tier 4: Adaptive maturity. All evaluations consider HIPAA compliance and the protection of ePHI (electronic Protected Health Information).
 
 ---
 
@@ -130,7 +131,5 @@ This README documents a cybersecurity maturity assessment based on the NIST Cybe
 
 ---
 
-## 🧾 Disclaimer
 
-This report is for educational or illustrative use. It does not represent a real organization or audited compliance outcome. Always consult professional cybersecurity auditors or legal counsel for official HIPAA or NIST validation.
 
