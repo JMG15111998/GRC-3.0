@@ -1,135 +1,213 @@
-# GRC-3.0
-# 🛡️ Cybersecurity Maturity Assessment & Roadmap
+# 🛡️ MediSure Health — Cybersecurity GRC Assessment (NIST CSF 2.0)
 
-**Framework Used**: NIST Cybersecurity Framework (CSF) 2.0  
-Client: MediSure Health (Fictional Healthcare Startup)
-Prepared by: James
-Date: October 2025
-
-
+**Client:** MediSure Health *(Fictional Healthcare Startup)*  
+**Prepared by:** GRC Advisor  
+**Framework Used:** NIST Cybersecurity Framework (CSF) 2.0  
+**Date:** September 2025
 
 ---
 
-## 📌 Introduction
+## 📚 Table of Contents
 
-This  documents a cybersecurity maturity assessment based on the NIST Cybersecurity Framework (CSF) 2.0. The goal is to evaluate the current security posture of the organization and build a roadmap toward Tier 4: Adaptive maturity. All evaluations consider HIPAA compliance and the protection of ePHI (electronic Protected Health Information).
+1. Executive Summary  
+2. Business Context  
+3. Governance Overview  
+4. Risk Management Approach  
+5. NIST CSF 2.0 Maturity Alignment  
+6. Current Profile Overview  
+7. Target Profile (Tier 4 – Adaptive)  
+8. Gap Analysis Summary  
+9. Risk Register (Sample)  
+10. HIPAA Security Rule Mapping  
+11. Strategic Roadmap  
+12. Security Metrics & KPIs  
+13. Framework References  
 
 ---
 
-## 🧩 CSF Core Functions Summary
+## 1. Executive Summary
 
-| Function   | Key Activities                          | Current Tier     | Target Tier      |
-|------------|------------------------------------------|------------------|------------------|
-| Identify   | Asset inventory, risk classification     | Tier 1: Partial  | Tier 4: Adaptive |
-| Protect    | Access control, encryption, DevSecOps    | Tier 2: Risk-Informed | Tier 4: Adaptive |
-| Detect     | Monitoring, SIEM, threat detection       | Tier 1: Partial  | Tier 4: Adaptive |
-| Respond    | Incident response, communications        | Tier 1: Partial  | Tier 3: Repeatable |
-| Recover    | Backups, continuity, resilience          | Tier 1: Partial  | Tier 3: Repeatable |
+This GRC (Governance, Risk, and Compliance) report assesses the cybersecurity posture of **MediSure Health**, a cloud-first healthcare startup handling electronic Protected Health Information (ePHI) in compliance with HIPAA regulations.
+
+Using the **NIST CSF 2.0**, the report identifies current maturity tiers, highlights security weaknesses, and recommends a **phased roadmap** toward achieving a **Tier 4 Adaptive** security profile.
+
+### 🔍 Key Highlights
+
+- **Current CSF Tier:** Tier 1 – Partial  
+- **Target CSF Tier:** Tier 4 – Adaptive  
+- **Critical Gaps:** Governance, access control, monitoring, incident response  
+- **Timeframe to Target:** 18+ months (phased)
 
 ---
 
-## 📉 Current Profile Overview (Tier 1–2)
+## 2. Business Context
+
+| Attribute         | Details                                         |
+|------------------|-------------------------------------------------|
+| **Industry**      | Digital Health / Healthcare SaaS               |
+| **Size**          | ~150 employees                                 |
+| **Compliance**    | HIPAA (U.S. Healthcare Regulation)             |
+| **Infrastructure**| Cloud-first (SaaS / PaaS), hybrid assets       |
+| **Data Processed**| ePHI, PII, clinical records, billing info      |
+| **Critical Systems** | EHR Platform, Mobile App, Cloud Dashboards, Third-Party Integrations |
+
+---
+
+## 3. Governance Overview
+
+### 🔎 Current Gaps
+
+- No defined cybersecurity governance framework  
+- Security operations are reactive and IT-driven  
+- No Chief Compliance or Privacy Officer (CCPO)  
+- Executive involvement is informal and undocumented  
+
+### 🛠️ Recommendations
+
+- Create and implement a **Cybersecurity Governance Policy**  
+- Appoint a **Chief Compliance & Privacy Officer (CCPO)**  
+- Form a **Security Steering Committee**  
+- Establish board-level security reporting
+
+---
+
+## 4. Risk Management Approach
+
+### 📉 Current State
+
+- No centralized or documented risk register  
+- Risks handled at the project level without standardization  
+- Third-party/vendor risks are not formally assessed  
+
+### 📈 Target State
+
+- Maintain an enterprise-wide **Risk Register**  
+- Perform **quarterly risk assessments**  
+- Enforce onboarding/offboarding controls for vendors  
+- Align risk program to **HIPAA** and **NIST CSF 2.0**
+
+---
+
+## 5. NIST CSF 2.0 Maturity Alignment
+
+| **CSF Function** | **Description**                          | **Current Tier** | **Target Tier** |
+|------------------|-------------------------------------------|------------------|-----------------|
+| **Govern**       | Strategy, policy, oversight               | Tier 1           | Tier 4          |
+| **Identify**     | Asset inventory, risk classification      | Tier 1           | Tier 4          |
+| **Protect**      | Access control, encryption, DevSecOps     | Tier 2           | Tier 4          |
+| **Detect**       | Monitoring, SIEM, threat detection         | Tier 1           | Tier 4          |
+| **Respond**      | Incident response, communication           | Tier 1           | Tier 3          |
+| **Recover**      | Backups, continuity, resilience            | Tier 1           | Tier 3          |
+
+---
+
+## 6. Current Profile Overview
 
 ### 🔻 Summary of Key Weaknesses
 
-- ❌ No Multi-Factor Authentication (MFA) or secure access control policies
-- ❌ No PHI classification or asset inventory in place
-- ❌ No SIEM, log monitoring, or alerting thresholds configured
-- ❌ No Incident Response (IR) Plan, breach workflow, or BCP testing
-- ❌ No defined governance structure or cybersecurity leadership
+- No MFA or secure access policies in place  
+- No PHI classification or formal asset inventory  
+- No SIEM, alert thresholds, or monitoring defined  
+- No IR Plan, breach notification procedures, or BCP testing  
+- No governance roles or compliance officer
 
 ---
 
-## 🎯 Target Profile (Tier 4 – Adaptive)
+## 7. Target Profile (Tier 4 – Adaptive)
 
-| Function   | Tier 4 Objectives |
-|------------|-------------------|
-| Govern     | Risk-aware leadership and strategic planning |
-| Identify   | Comprehensive asset inventory and Business Impact Analysis |
-| Protect    | Full encryption, secure-by-design DevSecOps |
-| Detect     | SIEM with integrated threat intelligence |
-| Respond    | Documented and tested IR plans (HIPAA-aligned) |
-| Recover    | Automated disaster recovery with simulation testing |
+### 🎯 Desired Cybersecurity Posture
 
----
-
-## 🧠 Gap Analysis Summary
-
-| Domain             | Gap Description                                 | Business Impact                           |
-|--------------------|--------------------------------------------------|--------------------------------------------|
-| Asset Management   | No PHI classification or asset tracking          | Regulatory risk, potential data leaks      |
-| Access Control     | No MFA, poor offboarding                        | Insider threats, privilege misuse          |
-| Governance         | No security policies or oversight roles         | Weak accountability, compliance failures   |
-| Detection          | No SIEM, log management, or alerting            | Slow threat detection and response         |
-| Incident Response  | No IR Plan or breach notification                | Legal and reputational risks               |
-| Data Security      | No encryption or DLP strategy                    | Uncontrolled PHI exposure                  |
+- **Govern:** Strategic cybersecurity leadership and risk-aligned planning  
+- **Identify:** Full asset inventory with business impact classification  
+- **Protect:** Secure-by-design processes, encryption, integrated DevSecOps  
+- **Detect:** Advanced SIEM with threat intelligence feeds  
+- **Respond:** HIPAA-aligned, tested IR plans and communication workflows  
+- **Recover:** Automated DR with routine simulations and resilience drills
 
 ---
 
-## 🗂️ Risk Register (Sample)
+## 8. Gap Analysis Summary
 
-| ID   | Risk Description                  | Likelihood | Impact   | Owner           | Status           |
-|------|----------------------------------|------------|----------|------------------|------------------|
-| R1   | Unauthorized access to ePHI      | High       | Critical | CIO              | Mitigation Planned |
-| R2   | No data backup or DR plan        | Medium     | High     | IT Operations    | Not Started       |
-| R3   | No incident response plan        | High       | High     | Security Lead    | In Progress       |
-| R4   | Insecure vendor APIs             | Medium     | High     | DevSecOps Team   | Not Started       |
-
----
-
-## 🗺️ HIPAA Security Rule Mapping
-
-| HIPAA Standard                      | CSF Function | Mapped Control                        |
-|------------------------------------|--------------|----------------------------------------|
-| 164.308(a)(1) – Security Management| Govern       | Risk management & governance           |
-| 164.310 – Physical Safeguards      | Protect      | Physical and workstation security      |
-| 164.312(a)(2) – Unique User ID     | Protect      | Identity and access management (IAM)   |
-| 164.308(a)(6) – Security Incidents | Respond      | Incident response planning             |
+| **Domain**         | **Gap Description**                              | **Business Impact**                             |
+|--------------------|--------------------------------------------------|-------------------------------------------------|
+| **Asset Management**| No PHI classification or asset tracking         | Regulatory noncompliance, data leaks            |
+| **Access Control**  | No MFA, weak offboarding process                | Insider threats, unauthorized access            |
+| **Governance**      | No policies or compliance officer               | Poor accountability, audit risk                 |
+| **Detection**       | No monitoring, SIEM, or thresholds              | Slow incident detection and containment         |
+| **Incident Response**| No IR Plan, breach workflow                    | Legal exposure, prolonged downtime              |
+| **Data Security**   | No encryption or DLP implemented                | ePHI disclosure risk, HIPAA violation           |
 
 ---
 
-## 🛣️ Strategic Roadmap
+## 9. Risk Register (Sample)
 
-### 🔹 Short-Term (0–6 Months)
-- Enforce MFA across all systems and apps
-- Publish formal security and privacy policies
-- Assign a HIPAA Compliance Officer
-- Build full asset inventory with PHI classification
-
-### 🔸 Mid-Term (6–18 Months)
-- Deploy and configure SIEM with cloud integrations
-- Launch company-wide HIPAA and cybersecurity training
-- Develop and test Incident Response Plan
-- Implement vendor risk management and BAA tracking
-
-### 🔺 Long-Term (18+ Months)
-- Automate patch management and vulnerability scans
-- Join H-ISAC for threat intelligence sharing
-- Create governance model with KPIs
-- Conduct quarterly tabletop IR exercises
+| ID  | Risk Description                  | Likelihood | Impact   | Owner           | Status            |
+|-----|----------------------------------|------------|----------|------------------|-------------------|
+| R1  | Unauthorized access to ePHI      | High       | Critical | CIO              | Mitigation Planned|
+| R2  | No backup or disaster recovery   | Medium     | High     | IT Operations    | Not Started       |
+| R3  | No incident response plan        | High       | High     | Security Lead    | In Progress       |
+| R4  | Insecure APIs with vendors       | Medium     | High     | DevSecOps Team   | Not Started       |
 
 ---
 
-## 📊 Security Metrics & KPIs
+## 10. HIPAA Security Rule Mapping
 
-| Metric                         | Current Value | Target Value | Notes                              |
-|--------------------------------|----------------|----------------|------------------------------------|
-| % of Assets Classified         | < 20%          | 100%          | PHI classification priority        |
-| MFA Adoption                  | ~30%           | 100%          | Immediate requirement              |
-| IR Plan Testing Frequency      | 0              | Quarterly     | Needed for HIPAA/NIST alignment    |
-| Workforce Security Training    | ~10%           | 100%          | Training gaps identified           |
+| HIPAA Standard                         | CSF Function | Control Description                          |
+|----------------------------------------|--------------|-----------------------------------------------|
+| 164.308(a)(1) – Security Management    | Govern       | Establish and operate a risk management program |
+| 164.310 – Physical Safeguards          | Protect      | Control physical access and workstation security |
+| 164.312(a)(2) – Unique User ID         | Protect      | Enforce individual authentication              |
+| 164.308(a)(6) – Security Incidents     | Respond      | Define and implement incident response procedures|
 
 ---
 
-## 📚 Frameworks & References
+## 11. Strategic Roadmap
+
+### 🔹 Short-Term (0–6 months)
+
+- Enforce **MFA** across all applications  
+- Publish **cybersecurity & privacy policies**  
+- Appoint **HIPAA Compliance Officer (CCPO)**  
+- Build **asset inventory** with PHI classification  
+
+### 🔸 Mid-Term (6–18 months)
+
+- Deploy **SIEM**, integrate with cloud apps  
+- Launch company-wide **HIPAA & security training**  
+- Test and refine **Incident Response Plan**  
+- Begin **vendor security reviews** and **BAA tracking**
+
+### 🔺 Long-Term (18+ months)
+
+- Automate **patching & vulnerability scans**  
+- Join **H-ISAC** for threat intelligence sharing  
+- Establish **KPI-based governance model**  
+- Conduct **quarterly tabletop simulations**
+
+---
+
+## 12. Security Metrics & KPIs
+
+| Metric                         | Current Value | Target Value | Notes                                |
+|--------------------------------|----------------|----------------|--------------------------------------|
+| % of Assets Classified         | < 20%          | 100%          | Needed for HIPAA PHI protection      |
+| MFA Adoption Rate              | ~30%           | 100%          | Priority enforcement metric          |
+| IR Plan Testing Frequency      | 0              | Quarterly     | HIPAA/NIST CSF required              |
+| Workforce Training Completion  | ~10%           | 100%          | Tracks awareness and compliance gaps |
+
+---
+
+## 13. Framework References
 
 - [NIST Cybersecurity Framework (CSF) 2.0](https://www.nist.gov/cyberframework)
 - [NIST SP 800-53 Rev 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final)
-- [HIPAA Security Rule (45 CFR Part 164)](https://www.hhs.gov/hipaa/for-professionals/security/index.html)
-- [MITRE ATT&CK Framework for Healthcare](https://attack.mitre.org/)
+- [HIPAA Security Rule (45 CFR Part 164)](https://www.hhs.gov/hipaa)
+- [MITRE ATT&CK Framework](https://attack.mitre.org/)
 - [OWASP Secure Software Design Principles](https://owasp.org/www-project-secure-software-development/)
 
+
+- **MITRE ATT&CK for Healthcare**
+- **OWASP Secure Software Design Principles**
+
 ---
-
-
 
